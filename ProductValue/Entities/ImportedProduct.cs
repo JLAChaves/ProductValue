@@ -24,7 +24,7 @@ namespace ProductValue.Entities
         public override string PriceTag()
         {
             return ($"{Name} $ {TotalPrice().ToString("F2", CultureInfo.InvariantCulture)}" +
-              $" (Customs fee: {CustomsFee}");
+              $" (Customs fee: {CustomsFee})");
         }
     }
 }

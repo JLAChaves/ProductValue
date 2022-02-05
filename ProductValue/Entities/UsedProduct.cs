@@ -20,7 +20,7 @@ namespace ProductValue.Entities
         public override string PriceTag()
         {
             return ($"{Name} (used) $ {Price.ToString("F2", CultureInfo.InvariantCulture)} " +
-               $"(manufacture date: {ManufactureDate})");
+               $"(manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")})");
         }
         
     }
