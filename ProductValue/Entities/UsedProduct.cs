@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Collections.Generic;
-using System.Text;
-
 
 namespace ProductValue.Entities
 {
@@ -22,13 +19,9 @@ namespace ProductValue.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag();
-        }
-
-        public override string ToString()
-        {
             return ($"{Name} (used) $ {Price.ToString("F2", CultureInfo.InvariantCulture)} " +
-                $"(manufacture date: {ManufactureDate})");
+               $"(manufacture date: {ManufactureDate})");
         }
+        
     }
 }
